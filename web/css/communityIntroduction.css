@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+ul.memberCheckList li {
+  float: left;
+  line-height: 1.6;
+  overflow: hidden;
+  width: 33%;
+}

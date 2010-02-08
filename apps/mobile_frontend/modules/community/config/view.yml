@@ -1,0 +1,7 @@
+homeSuccess:
+  customize:
+    menu:
+      template: [communityIntroductionMessage, menu]
+      parts:    [menu]
+      target:   [communityTop]
+      is_component: true

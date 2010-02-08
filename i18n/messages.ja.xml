@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Introduce to %friend%</source>
+        <target>%friend%に紹介</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Introduce this %community% to %friend%</source>
+        <target>%friend%にこの%community%を紹介する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Destination</source>
+        <target>紹介先</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%Community% introduction message</source>
+        <target>%Community%紹介メッセージ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The %Community% introduction message was sent successfully.</source>
+        <target>%Community%紹介メッセージの送信が完了しました。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>%name% sent you %Community% introduction message.</source>
+        <target>%name%さんから%Community%紹介メッセージが届いています。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>URL of this %Community%</source>
+        <target>この%Community%のURL</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>There is not %friend% you can introduce.</source>
+        <target>紹介できる%friend%がいません。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

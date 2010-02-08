@@ -1,0 +1,10 @@
+Navigation:
+  community_navigation_introduction:
+    type: "community"
+    uri: "communityIntroductionMessage/input"
+    sort_order: 19
+    Translation:
+      ja_JP:
+        caption: "友達に紹介"
+      en:
+        caption: "Introduces to My Friend"

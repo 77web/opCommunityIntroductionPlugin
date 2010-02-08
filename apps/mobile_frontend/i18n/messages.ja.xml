@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>The %Community% introduction message was sent successfully.</source>
+        <target>%Community%紹介ﾒｯｾｰｼﾞの送信が完了しました。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>If introduced from administrator of the %community%, you can join without the approval of the approval system.</source>
+        <target>%community%管理者から紹介した場合には、承認制の%community%にも承認無しで参加できます。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>* The choice of an destination place is random.</source>
+        <target>※紹介先の選択肢はﾗﾝﾀﾞﾑとなっています。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>* When the member who wants to send is not displayed on a list, please push %link% and update a display.</source>
+        <target>※送りたいﾒﾝﾊﾞｰがﾘｽﾄに表示されなかった場合、%link%を押して画面を更新してください。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>I was joined into the %name% %community%. please join when good together with me.</source>
+        <target>「%name%」%community%に入ってみました。よかったら一緒にどうですか?</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Send message as introduces this %community% to %friend%.</source>
+        <target>%friend%に%community%を紹介するﾒｯｾｰｼﾞを送信します。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

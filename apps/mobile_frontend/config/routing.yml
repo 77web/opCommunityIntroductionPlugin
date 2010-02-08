@@ -1,0 +1,3 @@
+communityIntroduction:
+  class: opCommuntiyIntroductionPluginFrontendRouteCollection
+  options: { name: communityIntroduction }
