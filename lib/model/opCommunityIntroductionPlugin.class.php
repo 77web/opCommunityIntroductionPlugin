@@ -37,8 +37,8 @@ class opCommunityIntroductionPlugin
   {
     $friendMemberList = Doctrine::getTable('MemberRelationship')->createQuery()
       ->select('member_id_to AS id')
-      ->where('member_id_from', $memberId)
-      ->andWhere('is_friend' , true)
+      ->where('member_id_from = ?', $memberId)
+      ->andWhere('is_friend = ?' , true)
       ->execute(array(), Doctrine::HYDRATE_ARRAY);
 
     $ids = array();
