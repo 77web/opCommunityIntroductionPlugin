@@ -20,14 +20,14 @@ class opCommunityIntroductionPlugin
   static public function getCommunityMemberIds($communityId)
   {
     $communityMemberList = Doctrine::getTable('CommunityMember')->createQuery()
-      ->select('member_id AS id')
+      ->select('member_id')
       ->where('community_id = ?', $communityId)
-      ->execute(array(), Doctrine::HYDRATE_ARRAY);
+      ->execute(array(), Doctrine::HYDRATE_NONE);
 
     $ids = array();
     foreach ($communityMemberList as $member)
     {
-      $ids[] = $member['id'];
+      $ids[] = $member[0];
     }
 
     return $ids;
@@ -36,15 +36,15 @@ class opCommunityIntroductionPlugin
   static public function getFriendMemberIds($memberId)
   {
     $friendMemberList = Doctrine::getTable('MemberRelationship')->createQuery()
-      ->select('member_id_to AS id')
+      ->select('member_id_to')
       ->where('member_id_from = ?', $memberId)
       ->andWhere('is_friend = ?' , true)
-      ->execute(array(), Doctrine::HYDRATE_ARRAY);
+      ->execute(array(), Doctrine::HYDRATE_NONE);
 
     $ids = array();
     foreach ($friendMemberList as $member)
     {
-      $ids[] = $member['id'];
+      $ids[] = $member[0];
     }
 
     return $ids;
@@ -94,7 +94,7 @@ class opCommunityIntroductionPlugin
       ->select('id')
       ->where('member_id = ?', $memberId)
       ->andWhere('SendMessageData.member_id = ?', $adminMemberId)
-      ->fetchOne();
+      ->fetchOne(array(), Doctrine::HYDRATE_NONE);
 
     return $result ? true : false;
   }
