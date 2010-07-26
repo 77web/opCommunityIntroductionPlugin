@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opCommunityIntroductionPlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>OpenPNE3上でコミュニティ紹介機能を提供するプラグインです。</summary>
+ <description>opMessagePluginの導入が必須です。</description>
+ <lead>
+  <name>Masato Nagasawa</name>
+  <user>nagasawa</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2010-07-26</date>
+ <time>13:14:34</time>
+ <version>
+  <release>0.9.0</release>
+  <api>0.9.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license>apache2</license>
+ <notes>first release.</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="58257d3e2eb791d62b945b9a0a9d419e" name="apps/mobile_frontend/config/routing.yml" role="data" />
+   <file baseinstalldir="/" md5sum="262c257e49e4ccf395507caef396bfbd" name="apps/mobile_frontend/i18n/messages.ja.xml" role="data" />
+   <file baseinstalldir="/" md5sum="c40cfd95f96112d48db242cad157728f" name="apps/mobile_frontend/modules/community/config/view.yml" role="data" />
+   <file baseinstalldir="/" md5sum="55d41c870a6cea31371734fa5239cbb4" name="apps/mobile_frontend/modules/communityIntroductionMessage/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="27ae350e8582102dbe747334ac3813a0" name="apps/mobile_frontend/modules/communityIntroductionMessage/actions/components.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="5162c67190018bdd1ac60dcbc5ba292e" name="apps/mobile_frontend/modules/communityIntroductionMessage/templates/inputError.php" role="data" />
+   <file baseinstalldir="/" md5sum="f646861a3234081c7a7713c37a5840cf" name="apps/mobile_frontend/modules/communityIntroductionMessage/templates/inputSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="799e28f89817768183dc6f7d177c3064" name="apps/mobile_frontend/modules/communityIntroductionMessage/templates/_menu.php" role="data" />
+   <file baseinstalldir="/" md5sum="58257d3e2eb791d62b945b9a0a9d419e" name="apps/pc_frontend/config/routing.yml" role="data" />
+   <file baseinstalldir="/" md5sum="55d41c870a6cea31371734fa5239cbb4" name="apps/pc_frontend/modules/communityIntroductionMessage/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="e214b6ed0bd59c48209d331b0d106c34" name="apps/pc_frontend/modules/communityIntroductionMessage/config/view.yml" role="data" />
+   <file baseinstalldir="/" md5sum="ebbe151b2569317d338b84c157c1bf1a" name="apps/pc_frontend/modules/communityIntroductionMessage/templates/inputError.php" role="data" />
+   <file baseinstalldir="/" md5sum="a79b77541fc83b6efed2e46ee5649353" name="apps/pc_frontend/modules/communityIntroductionMessage/templates/inputSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="9e2f1d743f9d860e2558c6f19e9095e3" name="config/app.yml" role="data" />
+   <file baseinstalldir="/" md5sum="e5fc850fffce51a5366b9601dfbd9fbb" name="config/config.php" role="data" />
+   <file baseinstalldir="/" md5sum="5cff163f1fac12bc4ca9465eaf70be69" name="data/fixtures/001_import_message_type.yml" role="data" />
+   <file baseinstalldir="/" md5sum="4d7e79ea2457743da750be435573e5cb" name="data/fixtures/020_navigation.yml" role="data" />
+   <file baseinstalldir="/" md5sum="d417c77903775c5892e2d4b963b13fd7" name="i18n/messages.ja.xml" role="data" />
+   <file baseinstalldir="/" md5sum="1a0e46dfd17ab75ef4f114be46f18f38" name="lib/opCommunityIntroductionPluginObserver.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="e4aa25e1a536a7a7dff73e07fd2c3172" name="lib/action/opCommunityIntroductionMessageActions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="d257ae9e055a552be50dd9ae33c6b282" name="lib/action/opCommunityIntroductionPluginCommunityIntroductionMessageActions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="9aeaee631b48c319c9b88ce75fe42136" name="lib/form/BaseCommunityIntroductionMessageForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="2e2006935c8402972e3eca007c3ff5c8" name="lib/form/MobileFrontendCommunityIntroductionMessageForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="959585a99b7c037759b78af83f12e76e" name="lib/form/PcFrontendCommunityIntroductionMessageForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="0f97c5d38ef0356920f30ef5ae823fe8" name="lib/model/opCommunityIntroductionPlugin.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="fa4798367c2e05dab87071a9c95e54e8" name="lib/routing/opCommunityIntroductionPluginBaseRouteCollection.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="3b94f37ae6172fe332235ad330e97d4c" name="lib/routing/opCommuntiyIntroductionPluginFrontendRouteCollection.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="195627cf4fc018039e70931a3a50e1af" name="templates/_communityIntroductionMessage.php" role="data" />
+   <file baseinstalldir="/" md5sum="97c1fa64b3c584ab6a72ba38c3c40ba3" name="test/bootstrap/database.php" role="data" />
+   <file baseinstalldir="/" md5sum="609291f6d0ccc1e82a5eaa466ff2904d" name="test/bootstrap/functional.php" role="data" />
+   <file baseinstalldir="/" md5sum="f5a1c27abae2c2631380ed4bdf3462b7" name="test/bootstrap/unit.php" role="data" />
+   <file baseinstalldir="/" md5sum="8471fade12b0760fab6715ffb8b8f9e4" name="test/fixtures/test_data.yml" role="data" />
+   <file baseinstalldir="/" md5sum="e4fcf94e181dee5e2306b70d048c5d9b" name="test/functional/mobile_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="5f23fabaf6d244d28902fd3312cbf745" name="test/functional/pc_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="5034740fe5a82585bb71bd7fb2147f2c" name="test/unit/model/SkeletonTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="6b1147775ab0a796b899f59113ef94b9" name="web/css/communityIntroduction.css" role="data" />
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.2.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-07-26</date>
+   <license>apache2</license>
+   <notes>first release.</notes>
+  </release>
+ </changelog>
+</package>
