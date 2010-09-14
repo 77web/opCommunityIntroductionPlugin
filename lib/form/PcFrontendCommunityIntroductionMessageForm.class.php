@@ -19,8 +19,9 @@ class PcFrontendCommunityIntroductionMessageForm extends BaseCommunityIntroducti
 {
   protected function setWidgetOfFriendsMember()
   {
+    $id = sfContext::getInstance()->getUser()->getMember()->getId();
     $memberList = opCommunityIntroductionPlugin::getNotJoinCommunityFriendMembers(
-      $this->community->getId(), sfContext::getInstance()->getUser()->getMember());
+      $this->community->getId(), $id);
 
     $memberNames = array();
     foreach ($memberList as $member)

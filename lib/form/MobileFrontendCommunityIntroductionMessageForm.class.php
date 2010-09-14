@@ -21,17 +21,17 @@ class MobileFrontendCommunityIntroductionMessageForm extends BaseCommunityIntrod
   {
     $size = sfConfig::get('app_community_introduction_mobile_choice_friend_size', 5);
 
-    $allMemberIds = opCommunityIntroductionPlugin::getNotJoinCommunityFriendMemberIds(
-      $this->community->getId(), sfContext::getInstance()->getUser()->getMember());
+    $id = sfContext::getInstance()->getUser()->getMember()->getId();
     $memberList = opCommunityIntroductionPlugin::getNotJoinCommunityFriendMembers(
-      $this->community->getId(), sfContext::getInstance()->getUser()->getMember(), $size, true);
+      $this->community->getId(), $id, $size, true);
 
     $memberNames = array();
+    $allMemberIds = array();
     foreach ($memberList as $member)
-   {
+    {
       $memberNames[$member->getId()] = $member->getName();
     }
     $this->setWidget('member_id_list', new sfWidgetFormChoice(array('choices' => $memberNames)));
-    $this->setValidator('member_id_list', new sfValidatorChoice(array('choices' => $allMemberIds)));
+    $this->setValidator('member_id_list', new sfValidatorChoice(array('choices' => array_keys($memberNames))));
   }
 }
